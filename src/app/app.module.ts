@@ -6,11 +6,16 @@ import { HomeComponent } from './home/home.component';
 import { PostComponent } from './post/post.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 export const appRoutes: Routes = [
   {
-      path: 'home',
-      component: HomeComponent
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: 'post',
@@ -23,6 +28,10 @@ export const appRoutes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
@@ -32,7 +41,8 @@ export const appRoutes: Routes = [
     HomeComponent,
     PostComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
